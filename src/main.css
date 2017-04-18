@@ -1,0 +1,98 @@
+ /* See the documentation for how to load in regular weight versions */
+@font-face {
+	font-family: 'Benton';
+	src: url('https://apps.bostonglobe.com/common/font/benton-bold.woff2') format('woff2'), url('https://apps.bostonglobe.com/common/font/benton-bold.woff') format('woff');
+    font-weight: 600;
+}
+
+@font-face {
+	font-family: 'Miller';
+	src: url('https://apps.bostonglobe.com/common/font/miller-bold.woff2') format('woff2'), url('https://apps.bostonglobe.com/common/font/miller-bold.woff') format('woff');
+    font-weight: 600;
+}
+
+/* =========================== */
+/* Globe font stack examples
+/* =========================== */
+
+/* Serif (Miller) */
+/* font-family: 'Miller', Georgia, Times New Roman, Times, serif; */
+/* font-weight: 600; */
+
+/* Sans-serif (Benton) */
+/* font-family: 'Benton', Helvetica, Arial, sans-serif; */
+/* font-weight: 600; */
+
+/* Serif */
+/* font-family: 'Georgia', Times New Roman, Times, serif; */
+
+/* Sans-serif */
+/* font-family: 'Helvetica', Arial, sans-serif; */
+
+/* =========================== */
+/* Graphic styles
+/* =========================== */
+
+
+
+
+
+.graphic-head {
+	font-family: 'Miller', Georgia, Times New Roman, Times, serif;
+	margin-top: 20px;
+	font-size: 2rem;
+	line-height: 2.5rem;
+	margin-bottom: 4rem;
+}
+	
+.graphic-container {
+	width: 100%;
+}
+.child-container {
+	width: 20%;
+}
+.parent {
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+.child-top {
+	display: flex;
+	align-content: flex-end;
+	align-items: flex-end;
+	height: 50px;
+}
+.child-bottom {
+	font-size: 0.9rem;
+	line-height: 1.2rem;
+	font-family: $sans;
+	padding-right: 2rem;
+	align-content: flex-start;
+	align-items: flex-start;
+	font-family: Helvetica, Arial, sans-serif;
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+}	
+.child {
+	background-color: #59889d;
+	border-radius: 100%;
+}	
+
+@media (max-width: 650px) {
+  .child-container {
+  	width: 25%;
+  }
+}
+
+@media (max-width: 500px) {
+  .child-container {
+  	width: 33%;
+  }
+}
+
+@media (max-width: 400px) {
+  .child-container {
+  	width: 50%;
+  }
+}
